@@ -3,6 +3,8 @@ import Navbar from './Navbar';
 import Header from './Header';
 import TextArea from './textArea';
 import HorizontalScrollCards from './HorizontalScroll';
+import Ahead from './Ahead';
+import Timeline from "./Timeline"
 
 const Homepage = () => {
   return (
@@ -11,6 +13,8 @@ const Homepage = () => {
       <Header/>
       <TextArea/>
       <HorizontalScrollCards/>
+      <Ahead/>
+      <Timeline/>
     </>
   );
 }

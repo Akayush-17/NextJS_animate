@@ -10,7 +10,7 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Sekf-awarness test",
+    title: "Self-awarness test",
   },
   {
     id: "features",
