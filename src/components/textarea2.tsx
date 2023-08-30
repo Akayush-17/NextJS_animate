@@ -1,12 +1,12 @@
 import React from 'react'
 
-const textArea = () => {
+const textarea2 = () => {
   return (
     <div>
-    <div className='flex flex-row justify-around w-full p-10 mt-[8%]'>
+        <div className='flex flex-row justify-around w-full p-10 mt-[8%]'>
         
         <div className='w-[20%]'>
-            <h2 className='text-3xl font-bold'> EQ beats IQ</h2>
+            <h2 className='text-3xl font-bold'> Be the best you with EQ</h2>
         </div>
         <div className='w-[22%] text-base text-gray-700 font-medium'>
             <p>
@@ -21,14 +21,9 @@ const textArea = () => {
        
 
     </div>
-     <div className='mt-24'>
+    </div>
 
-     <h2 className=' font-bold text-gray-900 text-5xl relative'>
-     Does this sound familiar...
-     </h2>
-     </div>
-     </div>
   )
 }
 
-export default textArea
+export default textarea2
