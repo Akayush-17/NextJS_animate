@@ -30,7 +30,7 @@ const Timeline = () => {
   return (
     <div className="mt-[13%]">
       <div>
-        <h2 className="font-semibold mb-4">Wrong with self-improvement & how we're fixing it.</h2>
+        <h2 className="font-semibold mb-4">Wrong with self-improvement & how were fixing it.</h2>
         <h1 ref={elementRef} className={`font-bold text-gray-900 mb-6 text-5xl relative ${slideInClass}`}>
           Self-improvement. Ugh.
         </h1>
@@ -43,7 +43,7 @@ const Timeline = () => {
         </span>
           <li class="mb-10 ml-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
-            <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
+            <h2 className="text-md font-semibold mb-[-14px]">Its not easy as 1-2-3.</h2>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Application UI code in Tailwind CSS
             </h3>
@@ -59,7 +59,7 @@ const Timeline = () => {
         </span>
           <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
-          <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
+          <h2 className="text-md font-semibold mb-[-14px]">Its not easy as 1-2-3.</h2>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Marketing UI design in Figma
             </h3>
@@ -75,7 +75,7 @@ const Timeline = () => {
         </span>
           <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
-          <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
+          <h2 className="text-md font-semibold mb-[-14px]">Its not easy as 1-2-3.</h2>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               E-Commerce UI code in Tailwind CSS
             </h3>
@@ -90,7 +90,7 @@ const Timeline = () => {
         </span>
           <li class="ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
-          <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
+          <h2 className="text-md font-semibold mb-[-14px]">Its not easy as 1-2-3.</h2>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               E-Commerce UI code in Tailwind CSS
             </h3>
