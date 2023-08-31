@@ -1,6 +1,33 @@
-import React from 'react'
+"use client"
+import React,{useEffect,useState} from 'react';
+import "./style2.css"
 
-const textArea = () => {
+
+const TextArea: React.FC = () => {
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      function handleScroll() {
+        const element = document.querySelector('.slide-on-scroll');
+  
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const isInViewport =
+            rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight);
+  
+          setIsVisible(isInViewport);
+        }
+      }
+  
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Check initial visibility
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
   return (
     <div>
     <div className='flex flex-row justify-around w-full p-10 mt-[8%]'>
@@ -23,7 +50,7 @@ const textArea = () => {
     </div>
      <div className='mt-24'>
 
-     <h2 className=' font-bold text-gray-900 text-5xl relative'>
+     <h2 className=' font-bold text-gray-900 text-5xl relative slide-on-scroll'>
      Does this sound familiar...
      </h2>
      </div>
@@ -31,4 +58,4 @@ const textArea = () => {
   )
 }
 
-export default textArea
+export default TextArea

@@ -1,4 +1,17 @@
 import emojy from "../assets/emojy.png"
+
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
+import mylogo from "../assets/mylogo.svg"
+
+export {
+
+  menu,
+  close,
+  mylogo,
+ 
+};
+
 export const navLinks = [
   {
     id: "home",

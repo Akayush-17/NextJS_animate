@@ -1,8 +1,10 @@
 "use client"
 import React, { useState } from "react";
-import { close, menu } from "../assets";
-import mylogo from "../assets/logomy.png";
+import Image from 'next/image';
+import { close, menu } from ".";
 import { navLinks } from ".";
+import mylogo from  "../assets/mylogo.svg";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -10,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full sm:py-4  z-20 top-0 left-0 flex  bg-white justify-between items-center navbar">
-     <img src="https://flowbite.com/docs/images/logo.svg" className=" ml-12 " alt="Flowbite Logo"/>
+     <Image src={mylogo} className=" ml-12 h-12 w-12 " alt="Flowbite Logo"/>
 
       <ul className="list-none sm:flex hidden justify-center items-center flex-1">
         {navLinks.map((nav) => (

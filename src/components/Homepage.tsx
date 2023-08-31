@@ -7,6 +7,9 @@ import Ahead from './Ahead';
 import Timeline from "./Timeline";
 import Textarea2 from './textarea2';
 import Work from "./Work";
+import Footer from './Footer';
+import Vacancies from './Vacancies';
+import Wondered from './Wondered';
 
 const Homepage = () => {
   return (
@@ -17,8 +20,11 @@ const Homepage = () => {
       <HorizontalScrollCards/>
       <Ahead/>
       <Timeline/>
+      <Wondered/>
       <Textarea2/>
       <Work/>
+      <Vacancies/>
+      <Footer/>
     </>
   );
 }

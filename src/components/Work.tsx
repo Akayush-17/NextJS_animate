@@ -2,7 +2,7 @@ import React from "react";
 
 const Work = () => {
   return (
-    <div>
+    <div className="w-[100%]">
       <div className="bg-[#eeebfe] block w-full p-6 pl-16 rounded-lg shadow hover:bg-gray-100">
         <div className="mt-[10%] flex flex-row  w-full justify-between">
           <div>
@@ -15,7 +15,7 @@ const Work = () => {
 
         <div className="flex flex-row justify-between">
             <div>
-          <div className="z-0 mt-16 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+          <div className="z-0 mt-16 max-w-md p-8 bg-white border border-gray-200 rounded-lg shadow">
             <svg
               className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
               aria-hidden="true"
@@ -38,7 +38,7 @@ const Work = () => {
           </div>
 
           
-            <div className="z-10 p-6 max-w-sm h-36 mt-[-20px]  bg-[#fef6f1] border border-gray-200 rounded-lg shadow">
+            <div className="z-10 p-8 max-w-md h-36 mt-[-20px]  bg-[#fef6f1] border border-gray-200 rounded-lg shadow">
               <a href="#">
                 <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 ">
                   Product
@@ -52,7 +52,7 @@ const Work = () => {
             </div>
           
 
-          <div className="mt-12 flex flex-col justify-end ml-56">
+          <div className="mt-12 flex flex-col justify-end ml-56 mr-20">
             <div className="m-10 gap-10 p-6 max-w-xs h-48 mt-[-20px]  bg-white border border-gray-200 rounded-lg shadow">
               <a href="#">
                 <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 ">
