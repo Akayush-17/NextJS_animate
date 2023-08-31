@@ -3,7 +3,8 @@ import Image from 'next/image';
 import sun1 from '../assets/sun1.png'
 import sun2 from '../assets/sun2.png'
 import sun3 from '../assets/sun3.png'
-import line from '../assets/line.svg'
+import line from '../assets/line.svg';
+import "./style2.css";
 
 
 const Wondered = () => {
@@ -51,7 +52,7 @@ const Wondered = () => {
           </div>
           <div className='flex relative top-[72px] z-20 justify-around'>
             <div>
-              <div className='rounded-xl w-[130px] h-[40px]  bg-purple-500'>
+              <div className='rounded-xl w-[130px] h-[40px] animate-pop-up-slide1  bg-purple-500'>
                 <h1 className='relative text-white mx-[15px] py-[8px]'>Anonymous</h1>
               </div>
               <div className='relative my-4 mx-auto rounded-full w-4 h-4 bg-purple-500'>
@@ -63,12 +64,12 @@ const Wondered = () => {
               <div className='relative my-4 mx-auto rounded-full w-4 h-4 bg-blue-400'>
 
               </div>
-              <div className='rounded-xl w-[130px] h-[40px]  bg-blue-400'>
+              <div className='rounded-xl w-[130px] h-[40px] animate-pop-up-slide2  bg-blue-400'>
                 <h1 className='relative text-white mx-[15px] py-[8px]'>Anonymous1</h1>
               </div>
             </div>
             <div>
-              <div className='rounded-xl w-[130px] h-[40px]  bg-yellow-200'>
+              <div className='rounded-xl w-[130px] h-[40px] animate-pop-up-slide3  bg-yellow-200'>
                 <h1 className='relative text-white mx-[15px] py-[8px]'>Anonymous2</h1>
               </div>
               <div className='relative my-4 mx-auto rounded-full w-4 h-4 bg-yellow-200'>
@@ -80,7 +81,7 @@ const Wondered = () => {
               <div className='relative my-4 mx-auto rounded-full w-4 h-4 bg-green-300'>
 
               </div>
-              <div className='rounded-xl w-[130px]  h-[40px]  bg-green-300'>
+              <div className='rounded-xl w-[130px]  h-[40px] animate-pop-up-slide4  bg-green-300'>
                 <h1 className='relative text-white mx-[15px] py-[8px]'>Anonymous3</h1>
               </div>
             </div>

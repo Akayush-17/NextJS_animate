@@ -61,7 +61,7 @@ const Navbar = () => {
         )}
         
       </div>
-      <button type="button" className="text-white bg-gray-900 hover:bg-gray-900 focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-6 py-3 text-center mr-10 md:mr-12">Download app</button>
+      <button type="button" className="text-white bg-gray-900 hover:bg-gray-950 focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-6 py-3 text-center mr-10 md:mr-12 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">Download app</button>
     </nav>
   );
 };

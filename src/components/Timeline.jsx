@@ -11,6 +11,10 @@ const Timeline = () => {
       </div>
       <div className="ml-48">
         <ol class="relative border-l border-gray-200 dark:border-[#6240ee]">
+        <span class="absolute flex h-6 w-6 ml-[-12px] mt-[1px]">
+          <span class="absolute inline-flex animate-ping h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+      
+        </span>
           <li class="mb-10 ml-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
             <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
@@ -23,6 +27,10 @@ const Timeline = () => {
               pages.
             </p>
           </li>
+          <span class="absolute flex h-6 w-6 ml-[-12px] mt-[1px]">
+          <span class="absolute inline-flex animate-ping h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+      
+        </span>
           <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
           <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
@@ -35,6 +43,10 @@ const Timeline = () => {
               project.
             </p>
           </li>
+          <span class="absolute flex h-6 w-6 ml-[-12px] mt-[1px]">
+          <span class="absolute inline-flex animate-ping h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+      
+        </span>
           <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
           <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
@@ -46,6 +58,10 @@ const Timeline = () => {
               built on top of Tailwind CSS.
             </p>
           </li>
+          <span class="absolute flex h-6 w-6 ml-[-12px] mt-[1px]">
+          <span class="absolute inline-flex animate-ping h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+      
+        </span>
           <li class="ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-[#6240ee] dark:bg-[#6240ee]"></div>
           <h2 className="text-md font-semibold mb-[-14px]">It's not easy as 1-2-3.</h2>
