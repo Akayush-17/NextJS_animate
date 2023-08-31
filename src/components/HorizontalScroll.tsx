@@ -13,7 +13,7 @@ const HorizontalScrollCards = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const cardWidth = 300; // Assuming constant width for all cards
+    const cardWidth = 300; 
     const numCards = cardData.length;
 
     const totalWidth = cardWidth * numCards;
