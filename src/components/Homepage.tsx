@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
-import TextArea from './textArea';
+import Textarea2 from './Textarea2';
 import HorizontalScrollCards from './HorizontalScroll';
 import Ahead from './Ahead';
 import Timeline from "./Timeline";
-import Textarea2 from './textarea2';
+import TextArea from './TextArea';
 import Work from "./Work";
 import Footer from './Footer';
 import Vacancies from './Vacancies';
@@ -13,7 +13,7 @@ import Wondered from './Wondered';
 
 const Homepage = () => {
   return (
-    <>
+    < >
       <Navbar />
       <Header/>
       <TextArea/>

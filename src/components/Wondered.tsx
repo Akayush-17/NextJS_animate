@@ -25,7 +25,7 @@ const Wondered = () => {
           <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
       
         </span>
-            <Image className='w-12 mx-auto animate-revolve ' src={sun1} alt='' />
+            <Image className='w-12 mx-auto animate-revolve '  width={100} src={sun1} alt='' />
            
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
           </div>
@@ -36,7 +36,7 @@ const Wondered = () => {
           <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
       
         </span>
-            <Image className='w-12 mx-auto animate-revolve ' src={sun2} alt='' />
+            <Image className='w-12 mx-auto animate-revolve '  width={100} src={sun2} alt='' />
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
 
           </div>
@@ -48,14 +48,14 @@ const Wondered = () => {
           <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
       
         </span>
-            <Image className='w-12 mx-auto animate-revolve ' src={sun3} alt='' />
+            <Image className='w-12 mx-auto animate-revolve '  width={100} src={sun3} alt='' />
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
 
           </div>
 
         </div>
         <div  className=' z-0 relative top-[-160px]'>
-        <Image className='relative mx-auto w-[780px] my-3' src={line} alt='/' />
+        <Image className='relative mx-auto w-[780px] my-3' width={100} src={line} alt='/' />
       </div>
       <div className="relative pb-14">
         <div className='w-[800px] mx-auto rounded-2xl h-[250px] bg-white'>

@@ -28,7 +28,7 @@ const Timeline = () => {
   
     const slideInClass = isVisible ? 'slide-in' : '';
   return (
-    <div className="mt-[13%]">
+    <div className="mt-[13%] ">
       <div>
         <h2 className="font-semibold mb-4">Wrong with self-improvement & how were fixing it.</h2>
         <h1 ref={elementRef} className={`font-bold text-gray-900 mb-6 text-5xl relative ${slideInClass}`}>

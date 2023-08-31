@@ -10,18 +10,18 @@ const Footer = () => {
         <div>
             <div>
                 <div>
-                    <Image className=' w-16 mx-auto' src={logoo} alt='' />
+                    <Image className=' w-16 mx-auto' height={100}  width={100} src={logoo} alt='' />
                     <h1 className='mx-auto font-semibold py-1 text-blue-600 text-center text-3xl'>ahead</h1>
 
                 </div>
                 <div className='flex gap-16 pt-8'>
                     <div className='flex gap-3'> <div className='w-10 rounded-full h-10 bg-green-400'>
-                        <Image className='w-[25px] mx-auto my-2' src={location} alt='' />
+                        <Image className='w-[25px] mx-auto my-2' height={100} width={100} src={location} alt='' />
                     </div>
                         <h1 className='my-auto'>AuguststraBe 26, 10117 Berlin</h1>
                     </div>
                     <div className='flex gap-3'> <div className='w-10 rounded-full h-10 bg-green-400'>
-                        <Image className='w-[25px] mx-auto my-2' src={mail} alt='' />
+                        <Image className='w-[25px] mx-auto my-2' height={100}  width={100} src={mail} alt='' />
 
                     </div>
                         <h1 className='my-auto'>hi@ahead-app.com</h1>

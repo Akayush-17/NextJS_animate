@@ -1,13 +1,17 @@
 import React from "react";
+import Image from "next/image";
+import Phone from "../assets/phonee.svg";
 
 const Header = () => {
   return (
-    <div className="bg-[#eeebfe] block w-full p-6 pl-16 rounded-lg shadow hover:bg-gray-100">
+    <div className="bg-[#eeebfe] block w-full p-6 pl-16 rounded-lg shadow hover:bg-gray-100 ">
+      <div className="flex flex-row">
+      <div>
       <div className="mt-[10%]">
         <h5 className="mb-2 font-semibold tracking-tight text-gray-900">
           Ahead App
         </h5>
-        <h1 className="font-bold text-6xl w-[40%]">
+        <h1 className="font-bold text-6xl w-[60%]">
             Master your life by mastering emotion
         </h1>
        </div>
@@ -44,7 +48,11 @@ const Header = () => {
     </div>
     </div>
 </div>
-     
+</div>
+<div>
+  <Image src={Phone} className="h-[100%] w-[100%]" alt="phone"/>
+</div>
+</div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React,{useState,useRef,useEffect} from 'react';
 import "./style2.css";
 import "intersection-observer";
 
-const textArea = () => {
+const TextArea = () => {
     const elementRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
   
@@ -61,4 +61,4 @@ const textArea = () => {
   )
 }
 
-export default textArea
+export default TextArea

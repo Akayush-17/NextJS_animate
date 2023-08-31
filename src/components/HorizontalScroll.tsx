@@ -37,16 +37,16 @@ const HorizontalScrollCards = () => {
     );
     return () => {
       {
-        /* A return function for killing the animation on component unmount */
+       
       }
       pin.kill();
     };
   }, []);
 
   return (
-    <div className="mt-[-30px] ml-48 " ref={triggerRef}>
+    <div className="mt-[-30px] ml-48 w-screen" ref={triggerRef}>
       <div className="">
-        <div className="flex space-x-4 p-4" ref={sectionRef}>
+        <div className="flex space-x-4 p-4 w-screen" ref={sectionRef}>
           {cardData.map((card) => (
             <Cards
               key={card.id}

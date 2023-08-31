@@ -1,6 +1,6 @@
 import React from 'react'
 
-const textarea2 = () => {
+const Textarea2 = () => {
   return (
     <div>
         <div className='flex flex-row justify-around w-full p-10 mt-[2%] mb-16'>
@@ -26,4 +26,4 @@ const textarea2 = () => {
   )
 }
 
-export default textarea2
+export default Textarea2
