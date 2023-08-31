@@ -1,7 +1,32 @@
-import React from 'react';
-import "./style2.css"
+"use client"
+import React,{useState,useRef,useEffect} from 'react';
+import "./style2.css";
+import "intersection-observer";
 
 const textArea = () => {
+    const elementRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.01 } // Adjust the threshold as needed
+      );
+  
+      if (elementRef.current) {
+        observer.observe(elementRef.current);
+      }
+  
+      return () => {
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
+      };
+    }, []);
+  
+    const slideInClass = isVisible ? 'slide-in' : '';
     
   return (
     <div>
@@ -25,9 +50,12 @@ const textArea = () => {
     </div>
      <div className='mt-24'>
 
-     <h2 className=' font-bold text-gray-900 text-5xl relative slide-in'>
-     Does this sound familiar...
-     </h2>
+     <h2
+          ref={elementRef}
+          className={`font-bold text-gray-900 text-5xl relative ${slideInClass}`}
+        >
+          Does this sound familiar...
+        </h2>
      </div>
      </div>
   )

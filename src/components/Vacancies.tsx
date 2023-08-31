@@ -1,13 +1,42 @@
-import React from 'react'
+"use client"
+import React,{useRef,useEffect,useState} from 'react';
+import "./style2.css"
+import "intersection-observer";
 
 const Vacancies = () => {
+    const cardRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.1 } 
+      );
+  
+      if (cardRef.current) {
+        observer.observe(cardRef.current);
+      }
+  
+      return () => {
+        if (cardRef.current) {
+          observer.unobserve(cardRef.current);
+        }
+      };
+    }, []);
+  
+    const cardClass = isVisible ? 'animate-pop-and-scale' : '';
     return (
         <div className=" overflow-hidden block w-full py-12   pl-16 rounded-lg ">
             <div>
                 <h1 className='text-3xl tracking-wider font-bold'>Open vacancies</h1>
             </div>
             <div className='flex py-14 justify-between'>
-                <div className='px-5 h-[200px] w-[370px] rounded-2xl bg-orange-50'>
+            <div
+          ref={cardRef}
+          className={`px-5 h-[200px] w-[370px] rounded-2xl bg-orange-50 ${cardClass}`}
+        >
                     <div className='relative my-auto leading-loose mx-auto '>
 
 
@@ -21,7 +50,10 @@ const Vacancies = () => {
                     </div>
                 </div>
                
-                <div className='px-5 h-[200px] w-[375px] rounded-2xl bg-orange-50'>
+                <div
+          ref={cardRef}
+          className={`px-5 h-[200px] w-[370px] rounded-2xl bg-orange-50 ${cardClass}`}
+        >
                     <div className='relative my-auto leading-loose mx-auto '>
 
 
@@ -29,12 +61,15 @@ const Vacancies = () => {
                         <ul>
                             <li>• Full time position</li>
                             <li>• Berlin or remote</li>
-                            <li>• $40-55k, 0.25-0.50% equity share options</li>
+                            <li>• $40-55k, 0.25-0.50% equity share </li>
 
                         </ul>
                     </div>
                 </div>
-                <div className='px-5 h-[200px] w-[370px] rounded-2xl bg-orange-50'>
+                <div
+          ref={cardRef}
+          className={`px-5 h-[200px] w-[370px] rounded-2xl bg-orange-50 ${cardClass}`}
+        >
                     <div className='relative my-auto leading-loose mx-auto '>
 
 

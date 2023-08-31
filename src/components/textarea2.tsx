@@ -3,7 +3,7 @@ import React from 'react'
 const textarea2 = () => {
   return (
     <div>
-        <div className='flex flex-row justify-around w-full p-10 mt-[8%]'>
+        <div className='flex flex-row justify-around w-full p-10 mt-[2%] mb-16'>
         
         <div className='w-[20%]'>
             <h2 className='text-3xl font-bold'> Be the best you with EQ</h2>

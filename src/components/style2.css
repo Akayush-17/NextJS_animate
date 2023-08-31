@@ -22,7 +22,7 @@
   }
   
   .animate-revolve {
-    animation: revolve 10s linear infinite; /* Adjust the duration and timing function as needed */
+    animation: revolve 10s linear infinite; 
   }
   
 
@@ -35,7 +35,7 @@
     }
   }
   .animate-oscillate {
-    animation: translateOscillate 2s ease-in-out infinite alternate; /* Adjust duration and timing as needed */
+    animation: translateOscillate 2s ease-in-out infinite alternate; 
   }
 
   @keyframes popUpSlide1 {
@@ -81,19 +81,40 @@
   .animate-pop-up-slide2 {
     animation: popUpSlide2 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
     transition: transform 0.5s ease-in-out;
-    animation-delay: 0.25s; /* Delay the animation for 0.25 seconds */
+    animation-delay: 0.25s; 
   }
   
   .animate-pop-up-slide3 {
     animation: popUpSlide3 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
     transition: transform 0.5s ease-in-out;
-    animation-delay: 0.5s; /* Delay the animation for 0.5 seconds */
+    animation-delay: 0.5s; 
   }
   
   .animate-pop-up-slide4 {
     animation: popUpSlide4 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
     transition: transform 0.5s ease-in-out;
-    animation-delay: 0.75s; /* Delay the animation for 0.75 seconds */
+    animation-delay: 0.75s; 
   }  
+
+  .bg-blue-500 {
+    background-color: #3b82f6; 
+    width: 2px;
+  }
+  
+  @keyframes popAndScale {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.06);
+      opacity: 1;
+    }
+  }
+  .animate-pop-and-scale {
+    animation: popAndScale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
   
   

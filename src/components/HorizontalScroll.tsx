@@ -1,14 +1,52 @@
-import React from 'react';
+'use client';
+
+import React, { useRef, useEffect } from 'react';
 import Cards from './Cards';
 import { cardData } from '.';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const HorizontalScrollCards = () => {
-  return (
-    <div className='mt-[-30px] ml-48 '>
-      
+  const sectionRef = useRef(null);
+  const triggerRef = useRef(null);
 
-      <div className=''>
-        <div className='flex space-x-4 p-4'>
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const cardWidth = 300; // Assuming constant width for all cards
+    const numCards = cardData.length;
+
+    const totalWidth = cardWidth * numCards;
+
+    const pin = gsap.fromTo(
+      sectionRef.current,
+      {
+        translateX: 0,
+      },
+      {
+        translateX: `-${totalWidth + cardWidth}px`,
+        ease: 'none',
+        duration: 5,
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          start: 'bottom bottom',
+          end: `+=${totalWidth - window.innerWidth + cardWidth}px`,
+          scrub: 0.6,
+        },
+      }
+    );
+    return () => {
+      {
+        /* A return function for killing the animation on component unmount */
+      }
+      pin.kill();
+    };
+  }, []);
+
+  return (
+    <div className="mt-[-30px] ml-48 " ref={triggerRef}>
+      <div className="">
+        <div className="flex space-x-4 p-4" ref={sectionRef}>
           {cardData.map((card) => (
             <Cards
               key={card.id}
@@ -22,6 +60,6 @@ const HorizontalScrollCards = () => {
       </div>
     </div>
   );
-}
+};
 
 export default HorizontalScrollCards;

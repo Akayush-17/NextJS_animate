@@ -21,13 +21,22 @@ const Wondered = () => {
       
         <div className=" py-24 z-30 justify-between flex gap-0 px-[10%] px-auto">
           <div className=' relative '>
-            <Image className='w-12 mx-auto' src={sun1} alt='' />
+          <span className="absolute flex ml-[90px] mt-2 h-8 w-8 ">
+          <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+      
+        </span>
+            <Image className='w-12 mx-auto animate-revolve ' src={sun1} alt='' />
+           
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
           </div>
 
 
           <div className='relative'>
-            <Image className='w-12 mx-auto' src={sun2} alt='' />
+          <span className="absolute flex ml-[90px] mt-2 h-8 w-8 ">
+          <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+      
+        </span>
+            <Image className='w-12 mx-auto animate-revolve ' src={sun2} alt='' />
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
 
           </div>
@@ -35,7 +44,11 @@ const Wondered = () => {
 
 
           <div className=' relative '>
-            <Image className='w-12 mx-auto' src={sun3} alt='' />
+          <span className="absolute flex ml-[90px] mt-2 h-8 w-8 ">
+          <span className="absolute inline-flex animate-ping h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+      
+        </span>
+            <Image className='w-12 mx-auto animate-revolve ' src={sun3} alt='' />
             <h4 className='text-xs py-1'>Answer questions on your social skills</h4>
 
           </div>

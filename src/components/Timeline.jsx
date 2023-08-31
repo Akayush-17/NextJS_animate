@@ -1,11 +1,37 @@
-import React from "react";
+"use client";
+import React,{useState,useEffect,useRef} from "react";
+import "intersection-observer";
+
 
 const Timeline = () => {
+    const elementRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.01 } // Adjust the threshold as needed
+      );
+  
+      if (elementRef.current) {
+        observer.observe(elementRef.current);
+      }
+  
+      return () => {
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
+      };
+    }, []);
+  
+    const slideInClass = isVisible ? 'slide-in' : '';
   return (
     <div className="mt-[13%]">
       <div>
         <h2 className="font-semibold mb-4">Wrong with self-improvement & how we're fixing it.</h2>
-        <h1 className="h-24 font-bold text-gray-900 text-5xl">
+        <h1 ref={elementRef} className={`font-bold text-gray-900 mb-6 text-5xl relative ${slideInClass}`}>
           Self-improvement. Ugh.
         </h1>
       </div>
