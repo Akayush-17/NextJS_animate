@@ -59,6 +59,7 @@ const Timeline = () => {
           </li>
         </ol>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-top from-white to-transparent pointer-events-none"></div>
     </div>
   );
 };
