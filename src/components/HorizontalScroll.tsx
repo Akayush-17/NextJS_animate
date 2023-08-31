@@ -1,5 +1,4 @@
-'use client';
-
+"use client"
 import React, { useRef, useEffect } from 'react';
 import Cards from './Cards';
 import { cardData } from '.';
@@ -13,7 +12,7 @@ const HorizontalScrollCards = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const cardWidth = 300; 
+    const cardWidth = 300;
     const numCards = cardData.length;
 
     const totalWidth = cardWidth * numCards;
@@ -37,16 +36,15 @@ const HorizontalScrollCards = () => {
     );
     return () => {
       {
-       
+        pin.kill();
       }
-      pin.kill();
     };
   }, []);
 
   return (
-    <div className="mt-[-30px] ml-48 w-screen" ref={triggerRef}>
-      <div className="">
-        <div className="flex space-x-4 p-4 w-screen" ref={sectionRef}>
+    <div className="mt-[-30px] ml-4 mr-4 md:ml-48 md:mr-48">
+      <div className="overflow-x-scroll md:overflow-hidden">
+        <div className="flex flex-col md:flex-row md:space-x-4 p-4 w-screen" ref={sectionRef}>
           {cardData.map((card) => (
             <Cards
               key={card.id}
@@ -58,6 +56,7 @@ const HorizontalScrollCards = () => {
           ))}
         </div>
       </div>
+      <div className="md:hidden" ref={triggerRef}></div>
     </div>
   );
 };

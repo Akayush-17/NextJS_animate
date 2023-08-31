@@ -9,12 +9,12 @@ import "./style2.css";
 
 const Wondered = () => {
   return (
-    <div className="relative my-[100px] overflow-hidden bg-blue-100 block w-full p-6 pl-16 rounded-lg shadow">
+    <div className="relative my-[100px] overflow-hidden bg-blue-100 block sm:w-full w-[80vw] p-6 pl-16 rounded-lg shadow">
       <div className="mt-[4%] mx-auto  text-center ">
         <h5 className="mb-4  font-normal tracking-wide  text-gray-900">
           Let your friends, family, and co-workers (anonymously) rate your social skills.
         </h5>
-        <h1 className="font-bold text-5xl tracking-wide ">
+        <h1 className="font-bold sm:text-5xl text-3xl tracking-wide ">
           Ever wondered what others think of you?
         </h1>
       </div>
@@ -58,7 +58,7 @@ const Wondered = () => {
         <Image className='relative mx-auto w-[780px] my-3' width={100} src={line} alt='/' />
       </div>
       <div className="relative pb-14">
-        <div className='w-[800px] mx-auto rounded-2xl h-[250px] bg-white'>
+        <div className=' sm:w-[800px] w-60 mx-auto rounded-2xl h-[250px] bg-white'>
           <div className=' absolute  mx-auto '>
             <hr className='  relative my-[10px] top-10  h-[3px] w-[90%] bg-gray-300  mx-auto' />
 

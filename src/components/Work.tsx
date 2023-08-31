@@ -4,7 +4,7 @@ import ghost from '../assets/ghost.png'
 
 const Work = () => {
     return (
-        <div className=' bg-purple-100 overflow-hidden block w-full h-[730px] py-12   pl-16 rounded-lg shadow  '>
+        <div className=' bg-purple-100 overflow-hidden block sm:w-full w-[80vw] h-[730px] py-12   pl-16 rounded-lg shadow  '>
             <div className=' flex justify-between  around text-4xl font-bold py-7 pb-7'>
                 <h1 className='relative'>Work with us</h1>
                 <h1 className='relative px-24 font-semibold py-1 text-blue-600 text-center text-5xl'>ahead</h1>

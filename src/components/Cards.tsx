@@ -20,13 +20,13 @@ const Cards: React.FC<CardProps> = ({ imageSrc, title, description, color }) => 
 
   return (
     <div
-      className='justify-between mt-28'
+      className='justify-between sm:mt-28'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
         style={cardStyle}
-        className='block max-w-md w-96 h-56 m-4 p-6 border border-gray-200 rounded-lg  shadow hover:shadow-lg'
+        className='block max-w-md sm:w-96 h-56 m-4 p-6 border border-gray-200 rounded-lg  shadow hover:shadow-lg'
       >
         <Image className='h-16 w-16'  width={100} height={100} src={imageSrc} alt='Emoji' />
         <h2 className='mb-2 mt-1 text-xl font-bold tracking-tight text-gray-900 '>

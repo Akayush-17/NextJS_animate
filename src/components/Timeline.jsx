@@ -31,11 +31,11 @@ const Timeline = () => {
     <div className="mt-[13%] ">
       <div>
         <h2 className="font-semibold mb-4">Wrong with self-improvement & how were fixing it.</h2>
-        <h1 ref={elementRef} className={`font-bold text-gray-900 mb-6 text-5xl relative ${slideInClass}`}>
+        <h1 ref={elementRef} className={`font-bold text-gray-900 mb-6 sm:text-5xl text-4xl relative ${slideInClass}`}>
           Self-improvement. Ugh.
         </h1>
       </div>
-      <div className="ml-48">
+      <div className="sm:ml-48">
         <ol class="relative border-l border-gray-200 dark:border-[#6240ee]">
         <span class="absolute flex h-6 w-6 ml-[-12px] mt-[1px]">
           <span class="absolute inline-flex animate-ping h-full w-full rounded-full bg-sky-400 opacity-75"></span>

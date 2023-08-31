@@ -10,16 +10,16 @@ import './style2.css';
 
 const Ahead = () => {
   return (
-    <div className="mt-24 bg-orange-50 overflow-hidden block w-full py-12   pl-16 rounded-lg shadow  hover:bg-orange-50">
+    <div className="mt-24 bg-orange-50 overflow-hidden block sm:w-full w-[80vw] sm:py-12 py-4  sm:pl-16 rounded-lg shadow  hover:bg-orange-50">
       <div className=' relative text-right'>
         <Image className='w-10 relative left-[1300px]  top-[-65px]  '  width={100} src={flower} alt="" />
         <Image className='w-20 relative left-[1250px] top-[-20px] animate-revolve'  width={100} src={greenVec} alt=''/>
       </div>
-      <div className="mt-[3%]">
+      <div className="mt-[3%] sm:ml-0 ml-[15%]">
         <h5 className="mb-2 font-semibold tracking-tight text-gray-900">
           Built out of fustration
         </h5>
-        <h1 className="font-bold text-5xl w-[40%]">
+        <h1 className="font-bold text-5xl sm:w-[40%] ">
           Meet the ahead app
         </h1>
       </div>
