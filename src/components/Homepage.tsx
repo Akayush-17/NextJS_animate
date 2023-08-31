@@ -15,6 +15,7 @@ const Homepage = () => {
   return (
     < >
       <Navbar />
+      <Header/>
       <Text/>
       <HorizontalScrollCards/>
       <Ahead/>
